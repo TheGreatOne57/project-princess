@@ -145,3 +145,42 @@ button:hover{
     color:#ffffff;
     margin:15px 0 30px;
 }
+.stars{
+    position:fixed;
+    inset:0;
+    overflow:hidden;
+    pointer-events:none;
+    z-index:-1;
+}
+
+.stars span{
+    position:absolute;
+    width:3px;
+    height:3px;
+    background:white;
+    border-radius:50%;
+    animation:twinkle 3s infinite alternate;
+}
+
+.stars span:nth-child(1){top:10%;left:15%;}
+.stars span:nth-child(2){top:20%;left:80%;}
+.stars span:nth-child(3){top:35%;left:40%;}
+.stars span:nth-child(4){top:60%;left:20%;}
+.stars span:nth-child(5){top:75%;left:85%;}
+.stars span:nth-child(6){top:50%;left:65%;}
+.stars span:nth-child(7){top:90%;left:30%;}
+.stars span:nth-child(8){top:5%;left:55%;}
+.stars span:nth-child(9){top:40%;left:92%;}
+.stars span:nth-child(10){top:82%;left:12%;}
+
+@keyframes twinkle{
+    from{
+        opacity:.2;
+        transform:scale(.8);
+    }
+
+    to{
+        opacity:1;
+        transform:scale(1.8);
+    }
+}
