@@ -1,3 +1,5 @@
-document.addEventListener("DOMContentLoaded", () => {
-    console.log("❤️ Welcome to Project Princess ❤️");
+const button = document.getElementById("beginButton");
+
+button.addEventListener("click", () => {
+    alert("Welcome to our story, Julia ❤️");
 });
