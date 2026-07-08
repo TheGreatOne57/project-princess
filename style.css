@@ -16,8 +16,19 @@ body{
 }
 
 .hero{
+    position:relative;
+    overflow:hidden;
+
     max-width:700px;
+    width:100%;
+
     animation:fadeIn 1.5s ease;
+    margin:0 auto;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
 }
 
 .intro{
@@ -97,6 +108,17 @@ button:hover{
 .hero{
     position:relative;
     overflow:hidden;
+
+    max-width:700px;
+    width:100%;
+
+    animation:fadeIn 1.5s ease;
+    margin:0 auto;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
 }
 
 .hero::before{
