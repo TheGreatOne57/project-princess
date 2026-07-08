@@ -137,3 +137,8 @@ button:hover{
 .chapter{
     animation:fadeIn 1.4s ease;
 }
+.chapter h3{
+    font-size:2.4rem;
+    color:#ffffff;
+    margin:15px 0 30px;
+}
