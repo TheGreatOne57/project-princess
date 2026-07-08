@@ -1,5 +1,10 @@
 const button = document.getElementById("beginButton");
 
 button.addEventListener("click", () => {
-    alert("Welcome to our story, Julia ❤️");
+
+    document.getElementById("chapter-one")
+        .scrollIntoView({
+            behavior: "smooth"
+        });
+
 });
