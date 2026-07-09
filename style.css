@@ -310,10 +310,15 @@ button:hover{
     width:100%;
     border-radius:20px;
 
-    box-shadow:
-    0 0 40px rgba(255,255,255,.08);
+    border:2px solid rgba(255,255,255,.08);
 
-    transition:.6s;
+    box-shadow:
+        0 0 30px rgba(255,192,203,.15),
+        0 0 80px rgba(255,192,203,.05);
+
+    transition:
+        transform .6s ease,
+        box-shadow .6s ease;
 }
 
 .memory img:hover{
