@@ -340,3 +340,10 @@ button:hover{
     font-size:1.15rem;
     opacity:.9;
 }
+.caption{
+    margin-top:15px;
+    font-size:.95rem;
+    color:#cfcfcf;
+    font-style:italic;
+    opacity:.8;
+}
