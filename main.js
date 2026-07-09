@@ -19,24 +19,6 @@ openButton.addEventListener("click", () => {
     letter.classList.remove("hidden");
 
 });
-
-const memories = document.querySelectorAll(".memory");
-
-const observer = new IntersectionObserver((entries) => {
-
-    entries.forEach(entry => {
-
-        if (entry.isIntersecting) {
-            entry.target.classList.add("show");
-        }
-
-    });
-
-});
-
-memories.forEach(memory => {
-    observer.observe(memory);
-});
 const observer = new IntersectionObserver((entries)=>{
 
     entries.forEach(entry=>{
