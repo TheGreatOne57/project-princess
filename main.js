@@ -112,6 +112,8 @@ const nextReason = document.getElementById("nextReason");
 
 nextReason.addEventListener("click",()=>{
 
+    alert("Button clicked!");
+
     currentReason++;
 
     if(currentReason>=reasons.length){
