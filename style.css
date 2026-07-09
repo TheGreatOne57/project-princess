@@ -290,6 +290,8 @@ button:hover{
 
 }
 .memory{
+    position:relative;
+    z-index:2;
     width:90%;
     max-width:900px;
     margin:150px auto;
