@@ -291,7 +291,7 @@ button:hover{
 }
 .memory{
     position:relative;
-    z-index:2;
+    z-index:1;
     width:90%;
     max-width:900px;
     margin:150px auto;
@@ -310,14 +310,11 @@ button:hover{
 
 .memory img{
     width:100%;
+    height:240px;
+    object-fit:cover;
     border-radius:20px;
-
-    border:2px solid rgba(255,255,255,.08);
-
-    box-shadow:
-        0 0 30px rgba(255,192,203,.15),
-        0 0 80px rgba(255,192,203,.05);
-
+    display:block;
+    box-shadow:0 0 30px rgba(255,182,193,.25);
     transition:
         transform .6s ease,
         box-shadow .6s ease;
@@ -366,6 +363,8 @@ button:hover{
     bottom:0;
 
     width:4px;
+
+    z-index:0;
 
     transform:translateX(-50%);
 
