@@ -322,7 +322,11 @@ button:hover{
 }
 
 .memory img:hover{
-    transform:scale(1.03);
+    transform:scale(1.04);
+
+    box-shadow:
+        0 0 40px rgba(255,182,193,.35),
+        0 0 100px rgba(255,182,193,.15);
 }
 
 .memory h2{
