@@ -201,6 +201,8 @@ button:hover{
 }
 
 .event{
+    position:relative;
+    z-index:2;
     background:#161616;
     border-left:4px solid #ff4f87;
     padding:25px;
