@@ -73,3 +73,55 @@ function updateLoveCounter() {
 updateLoveCounter();
 
 setInterval(updateLoveCounter,1000);
+// ❤️ 100 Reasons
+
+const reasons = [
+
+{
+number:1,
+text:"Because you walked into my life when I least expected it."
+},
+
+{
+number:2,
+text:"Because your smile somehow makes every bad day better."
+},
+
+{
+number:3,
+text:"Because one Call of Duty: Mobile match became the beginning of forever."
+},
+
+{
+number:4,
+text:"Because hearing your voice instantly makes me feel at peace."
+},
+
+{
+number:5,
+text:"Because you make ordinary moments unforgettable."
+}
+
+];
+
+let currentReason = 0;
+
+const reasonNumber = document.getElementById("reasonNumber");
+const reasonText = document.getElementById("reasonText");
+const nextReason = document.getElementById("nextReason");
+
+nextReason.addEventListener("click",()=>{
+
+    currentReason++;
+
+    if(currentReason>=reasons.length){
+
+        currentReason=0;
+
+    }
+
+    reasonNumber.textContent=`Reason #${reasons[currentReason].number}`;
+
+    reasonText.textContent=reasons[currentReason].text;
+
+});
