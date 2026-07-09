@@ -223,3 +223,69 @@ button:hover{
 .event p{
     line-height:1.8;
 }
+.letter-section{
+    margin:120px auto;
+    max-width:700px;
+}
+
+.letter-section h2{
+    color:#ff9ec4;
+    margin-bottom:40px;
+}
+
+.envelope{
+    margin:auto;
+}
+
+#openLetter{
+
+    background:#ff4f87;
+    color:white;
+
+    border:none;
+
+    padding:18px 35px;
+
+    font-size:1.1rem;
+
+    border-radius:50px;
+
+    cursor:pointer;
+
+    transition:.4s;
+}
+
+#openLetter:hover{
+
+    transform:scale(1.08);
+
+    background:#ff6a9d;
+
+}
+
+.letter{
+
+    margin-top:40px;
+
+    background:#fff7f9;
+
+    color:#333;
+
+    padding:35px;
+
+    border-radius:15px;
+
+    line-height:2;
+
+    text-align:left;
+
+    box-shadow:0 0 40px rgba(255,120,170,.25);
+
+    animation:fadeIn 1s ease;
+}
+
+.hidden{
+
+    display:none;
+
+}
