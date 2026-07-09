@@ -337,7 +337,7 @@ button:hover{
     margin:150px auto;
     text-align:center;
 
-    opacity:0;
+    opacity:1;
     transform:translateY(60px);
 
     transition:1s;
