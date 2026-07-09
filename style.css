@@ -289,3 +289,45 @@ button:hover{
     display:none;
 
 }
+.memory{
+    width:90%;
+    max-width:900px;
+    margin:150px auto;
+    text-align:center;
+
+    opacity:0;
+    transform:translateY(60px);
+
+    transition:1s;
+}
+
+.memory.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+.memory img{
+    width:100%;
+    border-radius:20px;
+
+    box-shadow:
+    0 0 40px rgba(255,255,255,.08);
+
+    transition:.6s;
+}
+
+.memory img:hover{
+    transform:scale(1.03);
+}
+
+.memory h2{
+    margin-top:30px;
+    font-size:2.3rem;
+}
+
+.memory p{
+    margin-top:20px;
+    line-height:1.8;
+    font-size:1.15rem;
+    opacity:.9;
+}
