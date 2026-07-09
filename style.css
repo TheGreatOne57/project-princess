@@ -347,3 +347,34 @@ button:hover{
     font-style:italic;
     opacity:.8;
 }
+.timeline{
+    position:relative;
+    width:90%;
+    max-width:900px;
+    margin:120px auto;
+}
+
+.line{
+    position:absolute;
+
+    left:50%;
+
+    top:0;
+
+    bottom:0;
+
+    width:4px;
+
+    transform:translateX(-50%);
+
+    background:linear-gradient(
+        pink,
+        rgba(255,255,255,.2),
+        pink
+    );
+
+    border-radius:20px;
+
+    box-shadow:
+    0 0 25px rgba(255,182,193,.35);
+}
