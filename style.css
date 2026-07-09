@@ -541,3 +541,82 @@ button:hover{
     color:#cccccc;
     letter-spacing:1px;
 }
+/* ===== REASONS ===== */
+
+.reasons{
+    width:90%;
+    max-width:900px;
+    margin:150px auto;
+    text-align:center;
+}
+
+.reasons h2{
+    color:#ff4f87;
+    margin-bottom:15px;
+}
+
+.reasons-text{
+    color:#cfcfcf;
+    margin-bottom:40px;
+}
+
+.reason-card{
+
+    background:#161616;
+
+    border:2px solid rgba(255,79,135,.3);
+
+    border-radius:20px;
+
+    padding:35px;
+
+    box-shadow:0 0 25px rgba(255,79,135,.15);
+
+    min-height:180px;
+
+    transition:.4s;
+}
+
+.reason-card h3{
+
+    color:#ff4f87;
+
+    margin-bottom:20px;
+}
+
+.reason-card p{
+
+    font-size:1.15rem;
+
+    line-height:1.8;
+
+    color:#eeeeee;
+}
+
+#nextReason{
+
+    margin-top:35px;
+
+    background:#ff4f87;
+
+    color:white;
+
+    border:none;
+
+    padding:15px 35px;
+
+    border-radius:40px;
+
+    cursor:pointer;
+
+    font-size:1rem;
+
+    transition:.3s;
+}
+
+#nextReason:hover{
+
+    transform:scale(1.05);
+
+    box-shadow:0 0 20px rgba(255,79,135,.4);
+}
