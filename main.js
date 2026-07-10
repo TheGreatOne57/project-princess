@@ -114,21 +114,29 @@ const reasonCard = document.querySelector(".reason-card");
 
 nextReason.addEventListener("click",()=>{
 
-    reasonCard.classList.add("fade");
+    currentReason++;
 
-    setTimeout(()=>{
+    if(currentReason>=reasons.length){
 
-        currentReason++;
+        currentReason=0;
 
-        if(currentReason>=reasons.length){
+    }
 
-            currentReason=0;
+    reasonNumber.textContent=`Reason #${reasons[currentReason].number}`;
 
-        }
+    reasonText.textContent=reasons[currentReason].text;
 
-        reasonNumber.textContent=`Reason #${reasons[currentReason].number}`;
-        reasonText.textContent=reasons[currentReason].text;
+    if(reasons[currentReason].number>=100){{
 
+        nextReason.textContent="❤️ One Last Thing...";
+
+    }else{
+
+        nextReason.textContent="💌 Show Me Another Reason";
+
+    }
+
+});
         reasonCard.classList.remove("fade");
         reasonCard.classList.add("glow");
 
