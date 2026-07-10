@@ -763,48 +763,45 @@ letter-spacing:.3px;
 }
 
 .ending-title{
-
     color:#ff7aa8;
-
-    font-size:2rem;
-
-    margin-bottom:35px;
-
+    font-size:2.2rem;
+    margin-bottom:30px;
+    text-align:center;
 }
 
 .ending-message{
-
-    font-size:1.2rem;
-
-    line-height:2.1;
-
+    font-size:1.25rem;
+    line-height:2.2;
     color:#f4f4f4;
-
+    text-align:center;
+    max-width:700px;
+    margin:0 auto;
 }
 
 .ending-message strong{
+    color:#fff;
+}
 
-    color:white;
-
+.signature{
+    display:block;
+    margin-top:25px;
+    font-size:2.3rem;
+    color:#ff6fa3;
+    font-family:"Dancing Script",cursive;
 }
 
 .ending-fade,
 .ending-fade2{
-
     opacity:0;
-
-    transition:2s;
-
-    margin-top:40px;
-
+    transform:translateY(25px);
+    transition:all 1.2s ease;
+    text-align:center;
     color:#ffb6cf;
-
     font-style:italic;
-
+    margin-top:30px;
 }
 
 .show-ending{
-
     opacity:1;
-
+    transform:translateY(0);
 }
