@@ -587,93 +587,68 @@ const nextReason = document.getElementById("nextReason");
 
 const reasonCard = document.querySelector(".reason-card");
 
-nextReason.addEventListener("click",()=>{
+nextReason.addEventListener("click", () => {
+
+    // Final click after Reason #100
+    if (currentReason === reasons.length - 1 &&
+        nextReason.dataset.final === "true") {
+
+        reasonCard.classList.add("goodbye");
+        nextReason.style.display = "none";
+
+        setTimeout(() => {
+
+            const finalMessage = document.getElementById("finalMessage");
+
+            finalMessage.classList.add("show");
+
+            finalMessage.scrollIntoView({
+                behavior: "smooth"
+            });
+
+        }, 1200);
+
+        return;
+    }
 
     reasonCard.classList.add("fade");
 
-    setTimeout(()=>{
+    setTimeout(() => {
 
         currentReason++;
 
-        if(currentReason>=reasons.length){
+        if (currentReason >= reasons.length) {
 
-    currentReason=reasons.length-1;
-
-    reasonCard.classList.add("goodbye");
-
-    nextReason.style.display="none";
-
-    document
-        .getElementById("finalMessage")
-        .classList.add("show");
-
-    setTimeout(()=>{
-
-        document
-            .getElementById("finalMessage")
-            .scrollIntoView({
-                behavior:"smooth"
-            });
-
-    },1200);
-
-}
-
-        reasonNumber.textContent=`Reason #${reasons[currentReason].number}`;
-        reasonText.textContent=reasons[currentReason].text;
-
-        if(reasons[currentReason].number>=100){
-
-            nextReason.textContent="❤️ One Last Thing...";
-
-        }else{
-
-            nextReason.textContent="💌 Show Me Another Reason";
+            currentReason = reasons.length - 1;
 
         }
 
-        if(
-    reasons[currentReason].number===100 &&
-    nextReason.dataset.final!=="true"
-){
+        reasonNumber.textContent =
+            `Reason #${reasons[currentReason].number}`;
 
-    nextReason.dataset.final="true";
-
-    return;
-
-}
-
-if(nextReason.dataset.final==="true"){
-
-    reasonCard.classList.add("goodbye");
-
-    nextReason.style.display="none";
-
-    setTimeout(()=>{
-
-        const finalMessage=document.getElementById("finalMessage");
-
-        finalMessage.classList.add("show");
-
-        finalMessage.scrollIntoView({
-            behavior:"smooth"
-        });
-
-    },1200);
-
-    return;
-
-}
+        reasonText.textContent =
+            reasons[currentReason].text;
 
         reasonCard.classList.remove("fade");
         reasonCard.classList.add("glow");
 
-        setTimeout(()=>{
+        setTimeout(() => {
 
             reasonCard.classList.remove("glow");
 
-        },500);
+        }, 500);
 
-    },450);
+        if (currentReason === reasons.length - 1) {
+
+            nextReason.textContent = "❤️ One Last Thing...";
+            nextReason.dataset.final = "true";
+
+        } else {
+
+            nextReason.textContent = "💌 Show Me Another Reason";
+
+        }
+
+    }, 450);
 
 });
