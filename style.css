@@ -712,3 +712,27 @@ button:hover{
     text-shadow:0 0 20px rgba(255,79,135,.45);
 
 }
+.future-final.show{
+
+    animation: glowHeart 2s ease-in-out infinite alternate;
+
+}
+
+@keyframes glowHeart{
+
+    from{
+
+        text-shadow:
+        0 0 8px rgba(255,79,135,.4);
+
+    }
+
+    to{
+
+        text-shadow:
+        0 0 25px rgba(255,79,135,.9),
+        0 0 45px rgba(255,79,135,.5);
+
+    }
+
+}
