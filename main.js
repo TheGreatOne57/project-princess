@@ -114,27 +114,41 @@ const reasonCard = document.querySelector(".reason-card");
 
 nextReason.addEventListener("click",()=>{
 
-    currentReason++;
+    reasonCard.classList.add("fade");
 
-    if(currentReason>=reasons.length){
+    setTimeout(()=>{
 
-        currentReason=0;
+        currentReason++;
 
-    }
+        if(currentReason>=reasons.length){
 
-    reasonNumber.textContent=`Reason #${reasons[currentReason].number}`;
+            currentReason=0;
 
-    reasonText.textContent=reasons[currentReason].text;
+        }
 
-    if(reasons[currentReason].number>=100){{
+        reasonNumber.textContent=`Reason #${reasons[currentReason].number}`;
+        reasonText.textContent=reasons[currentReason].text;
 
-        nextReason.textContent="❤️ One Last Thing...";
+        if(reasons[currentReason].number>=100){
 
-    }else{
+            nextReason.textContent="❤️ One Last Thing...";
 
-        nextReason.textContent="💌 Show Me Another Reason";
+        }else{
 
-    }
+            nextReason.textContent="💌 Show Me Another Reason";
+
+        }
+
+        reasonCard.classList.remove("fade");
+        reasonCard.classList.add("glow");
+
+        setTimeout(()=>{
+
+            reasonCard.classList.remove("glow");
+
+        },500);
+
+    },450);
 
 });
         reasonCard.classList.remove("fade");
