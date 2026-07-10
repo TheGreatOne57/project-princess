@@ -599,6 +599,8 @@ nextReason.addEventListener("click",()=>{
 
     currentReason=reasons.length-1;
 
+    reasonCard.classList.add("goodbye");
+
     nextReason.style.display="none";
 
     document
@@ -613,7 +615,7 @@ nextReason.addEventListener("click",()=>{
                 behavior:"smooth"
             });
 
-    },400);
+    },1200);
 
 }
 
