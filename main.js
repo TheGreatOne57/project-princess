@@ -632,6 +632,39 @@ nextReason.addEventListener("click",()=>{
 
         }
 
+        if(
+    reasons[currentReason].number===100 &&
+    nextReason.dataset.final!=="true"
+){
+
+    nextReason.dataset.final="true";
+
+    return;
+
+}
+
+if(nextReason.dataset.final==="true"){
+
+    reasonCard.classList.add("goodbye");
+
+    nextReason.style.display="none";
+
+    setTimeout(()=>{
+
+        const finalMessage=document.getElementById("finalMessage");
+
+        finalMessage.classList.add("show");
+
+        finalMessage.scrollIntoView({
+            behavior:"smooth"
+        });
+
+    },1200);
+
+    return;
+
+}
+
         reasonCard.classList.remove("fade");
         reasonCard.classList.add("glow");
 
