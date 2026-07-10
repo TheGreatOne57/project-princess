@@ -620,3 +620,31 @@ button:hover{
 
     box-shadow:0 0 20px rgba(255,79,135,.4);
 }
+
+/* ===== Reason Animation ===== */
+
+.reason-card.fade{
+
+    opacity:0;
+
+    transform:translateY(20px) scale(.98);
+
+}
+
+.reason-card{
+
+    opacity:1;
+
+    transition:
+    opacity .45s ease,
+    transform .45s ease,
+    box-shadow .45s ease;
+
+}
+
+.reason-card.glow{
+
+    box-shadow:
+    0 0 40px rgba(255,79,135,.45);
+
+}
