@@ -100,7 +100,7 @@ text:"Because hearing your voice instantly makes me feel at peace."
 {
 number:5,
 text:"Because you make ordinary moments unforgettable."
-}
+},
 
 {
 number:6,
