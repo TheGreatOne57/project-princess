@@ -677,7 +677,7 @@ button:hover{
 
 .future-message{
 
-    background:#151515;
+    background:rgba(20,20,20,.85);
 
     border:2px solid rgba(255,79,135,.25);
 
@@ -711,8 +711,4 @@ button:hover{
 
     text-shadow:0 0 20px rgba(255,79,135,.45);
 
-}
-.future-message{
-    background:rgba(20,20,20,.85);
-    padding:50px;
 }
