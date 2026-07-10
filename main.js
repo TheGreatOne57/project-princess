@@ -110,18 +110,34 @@ const reasonNumber = document.getElementById("reasonNumber");
 const reasonText = document.getElementById("reasonText");
 const nextReason = document.getElementById("nextReason");
 
+const reasonCard = document.querySelector(".reason-card");
+
 nextReason.addEventListener("click",()=>{
 
-    currentReason++;
+    reasonCard.classList.add("fade");
 
-    if(currentReason>=reasons.length){
+    setTimeout(()=>{
 
-        currentReason=0;
+        currentReason++;
 
-    }
+        if(currentReason>=reasons.length){
 
-    reasonNumber.textContent=`Reason #${reasons[currentReason].number}`;
+            currentReason=0;
 
-    reasonText.textContent=reasons[currentReason].text;
+        }
+
+        reasonNumber.textContent=`Reason #${reasons[currentReason].number}`;
+        reasonText.textContent=reasons[currentReason].text;
+
+        reasonCard.classList.remove("fade");
+        reasonCard.classList.add("glow");
+
+        setTimeout(()=>{
+
+            reasonCard.classList.remove("glow");
+
+        },500);
+
+    },450);
 
 });
