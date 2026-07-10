@@ -1,5 +1,6 @@
 html{
     scroll-behavior:smooth;
+    overflow-x:hidden;
 }
 *{
     margin:0;
@@ -13,6 +14,8 @@ body{
     font-family:Arial, Helvetica, sans-serif;
     text-align:center;
     padding:30px;
+
+    overflow-x:hidden;
 }
 
 .hero{
