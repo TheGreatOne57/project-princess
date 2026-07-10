@@ -597,9 +597,25 @@ nextReason.addEventListener("click",()=>{
 
         if(currentReason>=reasons.length){
 
-            currentReason=0;
+    currentReason=reasons.length-1;
 
-        }
+    nextReason.style.display="none";
+
+    document
+        .getElementById("finalMessage")
+        .classList.add("show");
+
+    setTimeout(()=>{
+
+        document
+            .getElementById("finalMessage")
+            .scrollIntoView({
+                behavior:"smooth"
+            });
+
+    },400);
+
+}
 
         reasonNumber.textContent=`Reason #${reasons[currentReason].number}`;
         reasonText.textContent=reasons[currentReason].text;
