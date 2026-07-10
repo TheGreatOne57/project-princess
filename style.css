@@ -712,3 +712,7 @@ button:hover{
     text-shadow:0 0 20px rgba(255,79,135,.45);
 
 }
+.future-message{
+    background:red;
+    padding:50px;
+}
