@@ -747,7 +747,52 @@ letter-spacing:.3px;
 }
 
 .signature{
+.ending-title{
 
+    color:#ff7aa8;
+
+    font-size:2rem;
+
+    margin-bottom:35px;
+
+}
+
+.ending-message{
+
+    font-size:1.2rem;
+
+    line-height:2.1;
+
+    color:#f4f4f4;
+
+}
+
+.ending-message strong{
+
+    color:white;
+
+}
+
+.ending-fade,
+.ending-fade2{
+
+    opacity:0;
+
+    transition:2s;
+
+    margin-top:40px;
+
+    color:#ffb6cf;
+
+    font-style:italic;
+
+}
+
+.show-ending{
+
+    opacity:1;
+
+}
     display:block;
 
     margin-top:15px;
