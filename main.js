@@ -151,15 +151,3 @@ nextReason.addEventListener("click",()=>{
     },450);
 
 });
-        reasonCard.classList.remove("fade");
-        reasonCard.classList.add("glow");
-
-        setTimeout(()=>{
-
-            reasonCard.classList.remove("glow");
-
-        },500);
-
-    },450);
-
-});
