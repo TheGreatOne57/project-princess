@@ -814,3 +814,16 @@ letter-spacing:.3px;
     transition:all 1.2s ease;
 
 }
+.final-heart{
+
+    margin-top:60px;
+
+    font-size:1.15rem;
+
+    color:#ffb6cf;
+
+    opacity:.8;
+
+    letter-spacing:2px;
+
+}
