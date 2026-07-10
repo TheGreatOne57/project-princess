@@ -827,3 +827,39 @@ letter-spacing:.3px;
     letter-spacing:2px;
 
 }
+
+.final-message{
+
+    display:none;
+
+    opacity:0;
+
+    transform:translateY(60px);
+
+}
+
+.final-message.show{
+
+    display:block;
+
+    animation:endingReveal 2.5s forwards;
+
+}
+
+@keyframes endingReveal{
+
+0%{
+
+    opacity:0;
+    transform:translateY(60px);
+
+}
+
+100%{
+
+    opacity:1;
+    transform:translateY(0);
+
+}
+
+}
