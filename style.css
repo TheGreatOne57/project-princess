@@ -713,6 +713,6 @@ button:hover{
 
 }
 .future-message{
-    background:red;
+    background:rgba(20,20,20,.85);
     padding:50px;
 }
